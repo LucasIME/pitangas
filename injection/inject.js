@@ -75,7 +75,7 @@ $.get("https://pitangas-pitangas.cloudapps.hackaton.solutionarchitectsredhat.com
           <div class="video-playlist-item__title">${product.desc}</div>
           <div class="video-playlist-item__footer">
             <div class="video-exhibited-at video-playlist-item__exhibited-at">
-                <img src="https://assets.secure.checkout.visa.com/VCO/images/acc_49x31_blu02.png"/>
+                                 <img alt="Visa Checkout" class="v-button" role="button" src="https://assets.secure.checkout.visa.com/VCO/images/acc_49x31_blu02.png"/>
             </div>
           </div>
         </div>
