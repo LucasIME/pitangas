@@ -1,3 +1,26 @@
+// Importing visa api
+$.getScript("https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js", console.log);
+
+function onVisaCheckoutReady() {
+    V.init({
+        apikey: "KF7DD9HRRQWCM468067C21ArqgCE2UNtEiITnX9cJeVyfXOMU",
+        paymentRequest: {
+            currencyCode: "USD",
+            total: "10.00"
+        }
+    });
+    V.on("payment.success", function (payment){ 
+        alert(JSON.stringify(payment)); 
+    });
+    V.on("payment.cancel", function (payment){
+        alert(JSON.stringify(payment));
+    });
+    V.on("payment.error", function (payment, error){
+        alert(JSON.stringify(error)); 
+    });
+}
+
+
 // Create styles
 const style = document.createElement('style');
 style.type = 'text/css';
@@ -90,7 +113,9 @@ const content = products.map(product => {
           <div class="video-playlist-item__head video-playlist-item__head--upper">${product.title}</div>
           <div class="video-playlist-item__title">${product.desc}</div>
           <div class="video-playlist-item__footer">
-            <div class="video-exhibited-at video-playlist-item__exhibited-at">VISA</div>
+            <div class="video-exhibited-at video-playlist-item__exhibited-at">
+                <img alt="Visa Checkout" class="v-button" role="button" src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
+            </div>
           </div>
         </div>
       </span>
