@@ -5,14 +5,17 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
+@cross_origin()
 def home():
     return jsonify({"message" : "It's alive"})
 
 @app.route('/visa')
+@cross_origin()
 def visa():
     return render_template('visa.html')
 
 @app.route('/products')
+@cross_origin()
 def products():
     products = [{"id" : "1",
                 "type": "vestimenta",
