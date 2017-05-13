@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
+=======
+from flask import Flask, request, jsonify, render_template
+>>>>>>> a6faf666875792245b2c4e51eee02f890242dd27
 
 app = Flask(__name__)
 CORS(app)
@@ -8,6 +12,9 @@ CORS(app)
 def home():
     return jsonify({"message" : "It's alive"})
 
+@app.route('/visa')
+def visa():
+    return render_template('visa.html')
 
 @app.route('/products')
 def products():
