@@ -1,5 +1,19 @@
+function loadCss(uri) {
+  const link = document.createElement('link');
+  link.href = uri;
+  link.type = 'text/css';
+  link.rel = 'stylesheet';
+  link.media = 'screen,print';
+
+  document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+// Importing alert
+$.getScript('https://t4t5.github.io/sweetalert/dist/sweetalert-dev.js');
+loadCss('https://t4t5.github.io/sweetalert/dist/sweetalert.css');
+
 // Importing visa api
-$.getScript("https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js", console.log);
+$.getScript("https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js");
 
 function onVisaCheckoutReady() {
     V.init({
@@ -10,16 +24,12 @@ function onVisaCheckoutReady() {
         }
     });
     V.on("payment.success", function (payment){ 
-        alert(JSON.stringify(payment)); 
-    });
-    V.on("payment.cancel", function (payment){
-        alert(JSON.stringify(payment));
+        if(typeof swal !== 'undefined') swal("Compra efetuada com sucesso!", "success");
     });
     V.on("payment.error", function (payment, error){
-        alert(JSON.stringify(error)); 
+        if(typeof swal !== 'undefined') swal("Ocorreu um erro.", "Por favor, tente novamente mais tarde.", "error");
     });
 }
-
 
 // Create styles
 const style = document.createElement('style');
@@ -46,10 +56,50 @@ if (style.styleSheet) {
 
 document.getElementsByTagName('head')[0].appendChild(style);
 
-$.get("https://pitangas-pitangas.cloudapps.hackaton.solutionarchitectsredhat.com.br/products").then(function(response){
-    const products = response.products;
+const products = [
+  {
+    "desc": "blusa decotada. Cor azul piscina", 
+    "id": "1", 
+    "image": "http://ph-cdn1.ecosweb.com.br/Web/posthaus/foto/moda-feminina/blusas/blusa-azul-royal-com-decote-diferenciado_121966_301_1.jpg", 
+    "link": "http://www.cea.com.br/moda-feminina/blusas/azul%20marinho", 
+    "price": "50.00", 
+    "time": "00:05", 
+    "title": "blusa amor de ver\u00e3o", 
+    "type": "vestimenta"
+  }, 
+  {
+    "desc": "Sof\u00e1 3 lugares", 
+    "id": "2", 
+    "image": "https://static.mobly.com.br/r/540x540/p/Mobly-SofC3A1-3-Lugares-RetrC3A1til-Bourbon-Suede-Bege-9700-657413-1-zoom.jpg", 
+    "link": "https://www.mobly.com.br/moveis/sofas-3-lugares?cagpspn=pla&spall_source=especiais&catargetid=120159870002149561&cadevice=c&gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpdU6U5bUJ4U30r4FXr72t4GDFvWYRYsLQCbrK4wNjEhoCHGTw_wcB&quickview=LI582UP43XQAMOB", 
+    "price": "17000.00", 
+    "time": "00:10", 
+    "title": "Sof\u00e1 astral", 
+    "type": "mobilia"
+  }, 
+  {
+    "desc": "Sof\u00e1 3 lugares", 
+    "id": "3", 
+    "image": "https://static.mobly.com.br/r/540x540/p/Mobly-SofC3A1-3-Lugares-RetrC3A1til-Bourbon-Suede-Bege-9700-657413-1-zoom.jpg", 
+    "link": "https://www.mobly.com.br/moveis/sofas-3-lugares?cagpspn=pla&spall_source=especiais&catargetid=120159870002149561&cadevice=c&gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpdU6U5bUJ4U30r4FXr72t4GDFvWYRYsLQCbrK4wNjEhoCHGTw_wcB&quickview=LI582UP43XQAMOB", 
+    "price": "17000.00", 
+    "time": "00:13", 
+    "title": "Sof\u00e1 astral", 
+    "type": "mobilia"
+  }, 
+  {
+    "desc": "Sof\u00e1 3 lugares", 
+    "id": "4", 
+    "image": "https://static.mobly.com.br/r/540x540/p/Mobly-SofC3A1-3-Lugares-RetrC3A1til-Bourbon-Suede-Bege-9700-657413-1-zoom.jpg", 
+    "link": "https://www.mobly.com.br/moveis/sofas-3-lugares?cagpspn=pla&spall_source=especiais&catargetid=120159870002149561&cadevice=c&gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpdU6U5bUJ4U30r4FXr72t4GDFvWYRYsLQCbrK4wNjEhoCHGTw_wcB&quickview=LI582UP43XQAMOB", 
+    "price": "17000.00", 
+    "time": "00:17", 
+    "title": "Sof\u00e1 astral", 
+    "type": "mobilia"
+  }
+];
 
-    const content = products.map(product => {
+const content = products.map(product => {
   const anchor = document.createElement('a');
   //anchor.setAttribute('href', product.link);
   anchor.setAttribute('title', product.title);
@@ -75,7 +125,7 @@ $.get("https://pitangas-pitangas.cloudapps.hackaton.solutionarchitectsredhat.com
           <div class="video-playlist-item__title">${product.desc}</div>
           <div class="video-playlist-item__footer">
             <div class="video-exhibited-at video-playlist-item__exhibited-at">
-                                 <img alt="Visa Checkout" class="v-button" role="button" src="https://assets.secure.checkout.visa.com/VCO/images/acc_49x31_blu02.png"/>
+              <img alt="Visa Checkout" class="v-button" role="button" src="https://assets.secure.checkout.visa.com/VCO/images/acc_49x31_blu02.png"/>
             </div>
           </div>
         </div>
@@ -100,10 +150,7 @@ $('.video-playlist').prepend(`
       </div>
     </div>
   </div>
-`);
-})
-
-
+`)
 
 // Update active
 const interval = setInterval(() => {
