@@ -24,7 +24,7 @@ function onVisaCheckoutReady() {
         }
     });
     V.on("payment.success", function (payment){ 
-        if(typeof swal !== 'undefined') swal("Compra efetuada com sucesso!", "success");
+        if(typeof swal !== 'undefined') swal("🤘", "Compra efetuada com sucesso!", "success")
     });
     V.on("payment.error", function (payment, error){
         if(typeof swal !== 'undefined') swal("Ocorreu um erro.", "Por favor, tente novamente mais tarde.", "error");
