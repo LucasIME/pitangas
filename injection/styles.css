@@ -1,9 +1,14 @@
 .video-playlist-item {
   position: relative;
-  border: 1px solid transparent;
 }
-.video-playlist-item.active {
-  border: 1px solid rgba(255,255,255,.2);
+.video-playlist-item.active .video-playlist-item__head {
+  color: #ff0048;
+}
+.video-playlist-item .playlist-video__image {
+  border: 2px solid transparent;
+}
+.video-playlist-item.active .playlist-video__image {
+  border: 2px solid #ff0048;
 }
 .playlist-video__duration.product-price {
   text-transform: uppercase;
