@@ -76,6 +76,14 @@ $(() => {
               <div class="video-playlist-item__footer">
                 <div class="video-exhibited-at video-playlist-item__exhibited-at">
                   <img alt="Visa Checkout" class="v-button" role="button" src="https://assets.secure.checkout.visa.com/VCO/images/acc_49x31_blu02.png"/>
+
+                  <div class="checkout-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 15 12">
+                      <path fill="#61CE61" d="M.15 5.768l2.12-2.122 5.66 5.656-2.12 2.122z"/>
+                      <path fill="#61CE61" d="M3.686 9.303L12.878.11 15 2.233l-9.193 9.193z"/>
+                    </svg>
+                    <span>Comprado</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,7 +134,8 @@ $(() => {
       }
     });
     V.on("payment.success", function (payment){ 
-      console.log(payment)
+      selectedProduct.find('.v-button').hide();
+      selectedProduct.find('.checkout-success').show();
       if(typeof swal !== 'undefined') swal("Compra efetuada com sucesso!", "🤘", "success")
     });
     V.on("payment.error", function (payment, error){

@@ -8,3 +8,14 @@
 .playlist-video__duration.product-price {
   text-transform: uppercase;
 }
+.checkout-success {
+  display: none;
+}
+.checkout-success span {
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.videos-container:first-of-type {
+  margin-bottom: 20px;
+}
