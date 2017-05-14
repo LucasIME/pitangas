@@ -100,7 +100,7 @@ db.session.commit()
 
 maker = "Mobly"
 type = "mobília"
-title = "Sofá Dijon com Chaise Suede"
+title = "Sofá Dijon Cinza"
 desc = "Se você procura por conforto para a sua sala de estar, está olhando para a melhor definição dele. O conjunto de sofá Dijon possui um design incrível que permite a você aproveitar todo o espaço do cômodo, inclusive os cantos. Seu estilo contemporâneo privilegia a simplicidade na decoração do cômodo para que esse seja o móvel de destaque. Desfrute de uma sala confortável e pra lá de charmosa."
 time = "00:05"
 link = "https://www.mobly.com.br/sofa-3-lugares-dijon-com-chaise-suede-cinza-85433.html?cagpspn=pla&spall_source=especiais&catargetid=120159870001824022&cadevice=m&gclid=CjwKEAjw3drIBRCOwfC"
