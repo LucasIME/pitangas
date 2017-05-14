@@ -9,7 +9,7 @@ time = "00:05"
 link = "http://www.eaquamar.com.br/calca-jeans-rasgos-03-02-0818/p"
 images = ["http://aquamar.vteximg.com.br/arquivos/ids/211421-337-501/03.02.0818_0000_2.jpg", "http://aquamar.vteximg.com.br/arquivos/ids/211427-337-501/03.02.0818_0000_3.jpg"]
 size = ['36', '38', '40', '42', '44', '46']
-price = 'RS 79,99'
+price = 'R$ 79,99'
 option = "3x de R$ 26,66 sem juros no cartão."
 
 product = Product(maker, type, title, time, link, images, price)
@@ -75,7 +75,7 @@ db.session.commit()
 
 maker = "Aviator"
 type = "Vestuário"
-title = "Camisa Casual Classic Fit Xadrez"
+title = "Camisa Casual Xadrez"
 desc = "Camisa manga longa em tecido fio tinto xadrez 100% algodão, padrão exclusivo Aviator. Com botões na gola, 1 bolso com bordado 'Asa' e pala nas costas com prega. Modelagem Clássica Aviator."
 time = "00:09"
 link = "http://m.aviator.com.br/camisas/camisas-casuais/camisa-casual-cla-0013489238609.html?codbar=0013489238610"
@@ -100,7 +100,7 @@ db.session.commit()
 
 maker = "Mobly"
 type = "mobília"
-title = "Sofá 3 Lugares Dijon com Chaise Suede Cinza"
+title = "Sofá Dijon Cinza"
 desc = "Se você procura por conforto para a sua sala de estar, está olhando para a melhor definição dele. O conjunto de sofá Dijon possui um design incrível que permite a você aproveitar todo o espaço do cômodo, inclusive os cantos. Seu estilo contemporâneo privilegia a simplicidade na decoração do cômodo para que esse seja o móvel de destaque. Desfrute de uma sala confortável e pra lá de charmosa."
 time = "00:05"
 link = "https://www.mobly.com.br/sofa-3-lugares-dijon-com-chaise-suede-cinza-85433.html?cagpspn=pla&spall_source=especiais&catargetid=120159870001824022&cadevice=m&gclid=CjwKEAjw3drIBRCOwfC"
@@ -174,7 +174,7 @@ db.session.commit()
 
 maker = "Vivara"
 type = "Acessório"
-title = "Relógio Akium Feminino Aço Rosé"
+title = "Relógio Akium Feminino"
 desc = "Com o mesmo compromisso que possui com a criação de suas jóias, a Vivara desenvolveu em 2001 a Akium, marca de relógios, com modelos e coleções exclusivas! Transformando sonhos em realidade também no mundo da alta relojoaria, a Akium lança coleções modernas sempre alinhadas as últimas tendências da moda."
 time = "00:05"
 link = "http://www.vivara.com.br/produto/relogio-akium-feminino-aco-rose-rose-3d02fb-02/AK00002759?gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpqznKVLbxmSWCvxwzXYKDcudug5yyBqhwgfYXH0K6FRoCziHw_wcB"
