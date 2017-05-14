@@ -24,7 +24,7 @@ $(() => {
                 <div class="thumb-alt-content"></div>
                 <img class="thumb" src="${product.images[0]}" sizes="(min-width: 1024px) 10vw, 40vw">
               </div>
-              <span class="playlist-video__duration product-price">R$ ${product.price}</span>
+              <span class="playlist-video__duration product-price">${product.price}</span>
             </div>
           </div>
         </div>

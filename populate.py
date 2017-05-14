@@ -9,7 +9,7 @@ time = "00:05"
 link = "http://www.eaquamar.com.br/calca-jeans-rasgos-03-02-0818/p"
 images = ["http://aquamar.vteximg.com.br/arquivos/ids/211421-81-118/03.02.0818_0000_2.jpg", "http://aquamar.vteximg.com.br/arquivos/ids/211427-81-118/03.02.0818_0000_3.jpg"]
 size = ['36', '38', '40', '42', '44', '46']
-price = 'RS 79,99'
+price = 'R$ 79,99'
 option = "3x de R$ 26,66 sem juros no cartão."
 
 product = Product(maker, type, title, time, link, images, price)
