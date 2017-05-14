@@ -2,9 +2,6 @@ $(() => {
   let selectedProduct;
 
   setTimeout(() => {
-    // Inject manual
-    // end
-
     $.get("https://pitangas-pitangas.cloudapps.hackaton.solutionarchitectsredhat.com.br/products").then(function(response){
       const products = response.products;
 
@@ -72,6 +69,8 @@ $(() => {
 
     $('.product-item').on('click', (e) => {
       selectedProduct = $(e.currentTarget);
+      const video = document.getElementsByTagName("video")[0];
+      video.pause();
     });
 
     // Update active
@@ -93,13 +92,25 @@ $(() => {
         total: "10.00"
       }
     });
-    V.on("payment.success", function (payment){ 
+    V.on("payment.success", (payment) => { 
       selectedProduct.find('.v-button').hide();
       selectedProduct.find('.checkout-success').show();
-      if(typeof swal !== 'undefined') swal("Compra efetuada com sucesso!", "🤘", "success")
+      if(typeof swal !== 'undefined') {
+        swal("Compra efetuada com sucesso!", "🤘", "success");
+        const video = document.getElementsByTagName("video")[0];
+        video.play();
+      }
     });
-    V.on("payment.error", function (payment, error){
-      if(typeof swal !== 'undefined') swal("Ocorreu um erro.", "Por favor, tente novamente mais tarde.", "error");
+    V.on("payment.cancel", () => {
+      const video = document.getElementsByTagName("video")[0];
+      video.play();
+    });
+    V.on("payment.error", (payment, error) => {
+      if(typeof swal !== 'undefined') {
+        swal("Ocorreu um erro.", "Por favor, tente novamente mais tarde.", "error");
+        const video = document.getElementsByTagName("video")[0];
+        video.play();
+      }
     });
     })
 
