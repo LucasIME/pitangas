@@ -7,7 +7,7 @@ title = 'Calça Jeans Rasgos'
 desc = 'Calça jeans boyfriend estonada com rasgos. Composição: 100% algodão.'
 time = "00:05"
 link = "http://www.eaquamar.com.br/calca-jeans-rasgos-03-02-0818/p"
-images = ["http://aquamar.vteximg.com.br/arquivos/ids/211421-337-501/03.02.0818_0000_2.jpg", "http://aquamar.vteximg.com.br/arquivos/ids/211427-337-501/03.02.0818_0000_3.jpg"]
+images = ["https://filesquash.io/v1/a88010be/assets/34d89707-988c-4634-9885-6d001ac0504f", "http://aquamar.vteximg.com.br/arquivos/ids/211427-337-501/03.02.0818_0000_3.jpg"]
 size = ['36', '38', '40', '42', '44', '46']
 price = 'R$ 79,99'
 option = "3x de R$ 26,66 sem juros no cartão."
@@ -31,7 +31,7 @@ title = "Scarpin Stiletto Tanino"
 desc = "O clássico modelo scarpin ganha detalhes de recortes para trazer ainda mais glamour às suas produções. Combine com vestidos e saias, deixando o pé bem à mostra valorizando esse modelo incrível."
 time = "00:06"
 link = "https://www.schutz.com.br/store/sapatos/scarpins/scarpin-stiletto-tanino/p/0209100010387U?gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQptdTgv-b1E73Wf3TuZaANEJSQ83CL8jbtTtNmNEX0MBoC1Ovw_wcB"
-images = ["https://secure-static.schutz.com.br/medias/sys_master/schutz/he4/h2a/h00/h00/9022480351262/0209100010387U-01-BASEIMAGE-Thumbnail.jpg", "https://secure-static.schutz.com.br/medias/sys_master/schutz/h00/hf9/h00/h00/9022479368222/0209100010387U-02-BASEIMAGE-Thumbnail.jpg", "https://secure-static.schutz.com.br/medias/sys_master/schutz/hcf/ha8/h00/h00/9022479695902/0209100010387U-04-BASEIMAGE-Thumbnail.jpg"]
+images = ["https://filesquash.io/v1/a88010be/assets/34d89707-988c-4634-9885-6d001ac0504f", "https://secure-static.schutz.com.br/medias/sys_master/schutz/h00/hf9/h00/h00/9022479368222/0209100010387U-02-BASEIMAGE-Thumbnail.jpg", "https://secure-static.schutz.com.br/medias/sys_master/schutz/hcf/ha8/h00/h00/9022479695902/0209100010387U-04-BASEIMAGE-Thumbnail.jpg"]
 size = ["33", "34", "35", "36", "37", "38", "39", "40"]
 price = "R$ 360,00"
 option = "6x de R$ 60,00 sem juros."
@@ -55,7 +55,7 @@ title = "Blusa com renda off white"
 desc = "Essa blusa foi confeccionada em tecido plano leve. O modelo tem detalhe de renda na parte superior. O decote é redondo e as mangas são curtas. Aposte nessa blusa para compor seus melhores looks! Composição: 100% Viscose Modelo Veste: 38 Altura: 1,74cm Busto: 89cm Cintura: 62cm Quadril: 90cm"
 time = "00:07"
 link = "http://www.cea.com.br/Blusa-com-Renda-Off-White-8460232-Off_White/p?gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpz-LoeSfuxHxXcWNXh6VW1XDZPD7CM-P3_SqYVz6nvRoCawvw_wcB"
-images = ["http://cea.vteximg.com.br/arquivos/ids/1144921-450-540/Blusa-com-Renda-Off-White-8460232-Off_White_1.jpg", "http://cea.vteximg.com.br/arquivos/ids/1144922-1000-1200/Blusa-com-Renda-Off-White-8460232-Off_White_2.jpg", "http://cea.vteximg.com.br/arquivos/ids/1144923-1000-1200/Blusa-com-Renda-Off-White-8460232-Off_White_3.jpg"]
+images = ["https://filesquash.io/v1/a88010be/assets/d1c3e13c-42e8-4594-b753-f5e0b6591712", "http://cea.vteximg.com.br/arquivos/ids/1144922-1000-1200/Blusa-com-Renda-Off-White-8460232-Off_White_2.jpg", "http://cea.vteximg.com.br/arquivos/ids/1144923-1000-1200/Blusa-com-Renda-Off-White-8460232-Off_White_3.jpg"]
 size = ["36", "38", "40", "42", "44"]
 price = "R$ 69,99"
 option = "3x de R$ 23,33 no cartão."
@@ -79,7 +79,7 @@ title = "Camisa Casual Xadrez"
 desc = "Camisa manga longa em tecido fio tinto xadrez 100% algodão, padrão exclusivo Aviator. Com botões na gola, 1 bolso com bordado 'Asa' e pala nas costas com prega. Modelagem Clássica Aviator."
 time = "00:09"
 link = "http://m.aviator.com.br/camisas/camisas-casuais/camisa-casual-cla-0013489238609.html?codbar=0013489238610"
-images = ["http://m.aviator.com.br/aviator/fotos/Camisa-casual-classic-fit-xadrez-1488569842__g329979.jpg"]
+images = ["https://filesquash.io/v1/a88010be/assets/ae4ddfd2-0fa4-436a-8f09-244ac2c03004"]
 size = ["1", "2", "3", "4", "5", "6", "7"]
 price = "R$ 219,00"
 #option = "4x de R$ 87,47."
@@ -104,7 +104,7 @@ title = "Sofá Dijon Cinza"
 desc = "Se você procura por conforto para a sua sala de estar, está olhando para a melhor definição dele. O conjunto de sofá Dijon possui um design incrível que permite a você aproveitar todo o espaço do cômodo, inclusive os cantos. Seu estilo contemporâneo privilegia a simplicidade na decoração do cômodo para que esse seja o móvel de destaque. Desfrute de uma sala confortável e pra lá de charmosa."
 time = "00:08"
 link = "https://www.mobly.com.br/sofa-3-lugares-dijon-com-chaise-suede-cinza-85433.html?cagpspn=pla&spall_source=especiais&catargetid=120159870001824022&cadevice=m&gclid=CjwKEAjw3drIBRCOwfC"
-images = ["https://static.mobly.com.br/r/540x540/p/Mobly-SofC3A1-3-Lugares-Dijon-com-Chaise-Suede-Cinza-7196-33458-2-zoom.jpg"]
+images = ["https://filesquash.io/v1/a88010be/assets/2a464785-2cde-45b7-98cc-ecf138b8d100"]
 #size = ["Altura: 92cm", "Largura: 280cm", "Profundidade: 153cm", "Peso: 65kg"]
 price = "R$ 1614,99"
 option = "10x de R$ 161,50 sem juros."
@@ -128,7 +128,7 @@ title = "Calça Chino Boston"
 desc = "Calça chino com bolso faca e cós alfaiataria, em tecido de sarja algodão com elastano. Bolso costas embutido com botão de massa na cor da peça. Modelagem slim Aviator."
 time = "00:10"
 link = "http://m.aviator.com.br/calcas/calcas-chino/calca-chino-boston-4001429000120.html?codbar=4001429043920"
-images = ["http://m.aviator.com.br/aviator/fotos/Calca-chino-boston-1492093031__GV22944327033.jpg"]
+images = ["https://filesquash.io/v1/a88010be/assets/be61d7cd-a324-468b-a244-66ada1d49bb4"]
 size = ["38", "40", "42", "44", "46", "48", "50", "52"]
 price = "R$ 239,00"
 #option = ""
