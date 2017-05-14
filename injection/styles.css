@@ -10,6 +10,10 @@
 .video-playlist-item.active .playlist-video__image {
   border: 2px solid #ff0048;
 }
+.video-playlist-item.active .product-price {
+  background: #ff0048;
+  color: white;
+}
 .playlist-video__duration.product-price {
   text-transform: uppercase;
 }

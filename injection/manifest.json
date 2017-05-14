@@ -11,7 +11,7 @@
     {
       "matches": ["https://globoplay.globo.com/v/*"],
       "css": ["sweetalert.css", "styles.css"],
-      "js": ["jquery-3.2.1.min.js", "sweetalert-dev.js", "visa-sdk.js", "inject.js"]
+      "js": ["jquery-3.2.1.min.js", "lodash.js", "sweetalert-dev.js", "visa-sdk.js", "inject.js"]
     }
   ]
 }

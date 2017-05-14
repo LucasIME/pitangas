@@ -3,14 +3,17 @@ $(() => {
 
   setTimeout(() => {
     $.get("https://pitangas-pitangas.cloudapps.hackaton.solutionarchitectsredhat.com.br/products").then(function(response){
-      const products = response.products;
+      const products = _.sortBy(response.products, 'time');
 
-        const content = products.map(product => {
+      console.log(products);
+
+    const content = products.map((product, order) => {
       const anchor = document.createElement('a');
       //anchor.setAttribute('href', product.link);
       anchor.setAttribute('title', product.title);
       anchor.setAttribute('data-product-time', product.time);
       anchor.setAttribute('data-product-id', product.id);
+      anchor.setAttribute('data-product-order', order);
       anchor.className = 'video-playlist-item product-item';
       anchor.innerHTML = `
         <div class="video-playlist-item__video">
@@ -73,6 +76,10 @@ $(() => {
       video.pause();
     });
 
+    $('.product-item').bind('tick', (e) => {
+      $('.scroll-box').animate({ scrollTop: `${105 * (parseInt($(e.target).data('product-order')) - 1)}px` });
+    });
+
     // Update active
     const interval = setInterval(() => {
       $('.product-item').each((i, node) => {
@@ -80,6 +87,7 @@ $(() => {
         if(elm.data('product-time') === $('.media-control-indicator').first().text()) {
           $('.product-item').each((i, node) => { $(node).removeClass('active'); });
           elm.addClass('active');
+          elm.trigger('tick');
         }
       });
     }, 1000);
