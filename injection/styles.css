@@ -1,0 +1,21 @@
+.video-playlist-item {
+  position: relative;
+  border: 1px solid transparent;
+}
+.video-playlist-item.active {
+  border: 1px solid rgba(255,255,255,.2);
+}
+.playlist-video__duration.product-price {
+  text-transform: uppercase;
+}
+.checkout-success {
+  display: none;
+}
+.checkout-success span {
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.videos-container:first-of-type {
+  margin-bottom: 20px;
+}

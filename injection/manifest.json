@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pitanga",
+  "description": "This extension will add contextual products to Globo Play videos",
+  "version": "1.0",
+
+  "permissions": ["tabs", "https://*/*"],
+
+   "content_scripts": [
+    {
+      "matches": ["https://globoplay.globo.com/v/*"],
+      "css": ["sweetalert.css", "styles.css"],
+      "js": ["jquery-3.2.1.min.js", "sweetalert-dev.js", "visa-sdk.js", "inject.js"]
+    }
+  ]
+}
