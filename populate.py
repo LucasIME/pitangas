@@ -29,7 +29,7 @@ maker = "Schutz"
 type = "Vestuário"
 title = "Scarpin Stiletto Tanino"
 desc = "O clássico modelo scarpin ganha detalhes de recortes para trazer ainda mais glamour às suas produções. Combine com vestidos e saias, deixando o pé bem à mostra valorizando esse modelo incrível."
-time = "00:05"
+time = "00:06"
 link = "https://www.schutz.com.br/store/sapatos/scarpins/scarpin-stiletto-tanino/p/0209100010387U?gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQptdTgv-b1E73Wf3TuZaANEJSQ83CL8jbtTtNmNEX0MBoC1Ovw_wcB"
 images = ["https://secure-static.schutz.com.br/medias/sys_master/schutz/he4/h2a/h00/h00/9022480351262/0209100010387U-01-BASEIMAGE-Thumbnail.jpg", "https://secure-static.schutz.com.br/medias/sys_master/schutz/h00/hf9/h00/h00/9022479368222/0209100010387U-02-BASEIMAGE-Thumbnail.jpg", "https://secure-static.schutz.com.br/medias/sys_master/schutz/hcf/ha8/h00/h00/9022479695902/0209100010387U-04-BASEIMAGE-Thumbnail.jpg"]
 size = ["33", "34", "35", "36", "37", "38", "39", "40"]
@@ -53,7 +53,7 @@ maker = "C&A"
 type = "Vestuário"
 title = "Blusa com renda off white"
 desc = "Essa blusa foi confeccionada em tecido plano leve. O modelo tem detalhe de renda na parte superior. O decote é redondo e as mangas são curtas. Aposte nessa blusa para compor seus melhores looks! Composição: 100% Viscose Modelo Veste: 38 Altura: 1,74cm Busto: 89cm Cintura: 62cm Quadril: 90cm"
-time = "00:05"
+time = "00:07"
 link = "http://www.cea.com.br/Blusa-com-Renda-Off-White-8460232-Off_White/p?gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpz-LoeSfuxHxXcWNXh6VW1XDZPD7CM-P3_SqYVz6nvRoCawvw_wcB"
 images = ["http://cea.vteximg.com.br/arquivos/ids/1144921-450-540/Blusa-com-Renda-Off-White-8460232-Off_White_1.jpg", "http://cea.vteximg.com.br/arquivos/ids/1144922-1000-1200/Blusa-com-Renda-Off-White-8460232-Off_White_2.jpg", "http://cea.vteximg.com.br/arquivos/ids/1144923-1000-1200/Blusa-com-Renda-Off-White-8460232-Off_White_3.jpg"]
 size = ["36", "38", "40", "42", "44"]
@@ -102,7 +102,7 @@ maker = "Mobly"
 type = "mobília"
 title = "Sofá Dijon Cinza"
 desc = "Se você procura por conforto para a sua sala de estar, está olhando para a melhor definição dele. O conjunto de sofá Dijon possui um design incrível que permite a você aproveitar todo o espaço do cômodo, inclusive os cantos. Seu estilo contemporâneo privilegia a simplicidade na decoração do cômodo para que esse seja o móvel de destaque. Desfrute de uma sala confortável e pra lá de charmosa."
-time = "00:05"
+time = "00:08"
 link = "https://www.mobly.com.br/sofa-3-lugares-dijon-com-chaise-suede-cinza-85433.html?cagpspn=pla&spall_source=especiais&catargetid=120159870001824022&cadevice=m&gclid=CjwKEAjw3drIBRCOwfC"
 images = ["https://static.mobly.com.br/r/540x540/p/Mobly-SofC3A1-3-Lugares-Dijon-com-Chaise-Suede-Cinza-7196-33458-2-zoom.jpg"]
 #size = ["Altura: 92cm", "Largura: 280cm", "Profundidade: 153cm", "Peso: 65kg"]
@@ -126,7 +126,7 @@ maker = "Aviator"
 type = "Vestuário"
 title = "Calça Chino Boston"
 desc = "Calça chino com bolso faca e cós alfaiataria, em tecido de sarja algodão com elastano. Bolso costas embutido com botão de massa na cor da peça. Modelagem slim Aviator."
-time = "00:09"
+time = "00:10"
 link = "http://m.aviator.com.br/calcas/calcas-chino/calca-chino-boston-4001429000120.html?codbar=4001429043920"
 images = ["http://m.aviator.com.br/aviator/fotos/Calca-chino-boston-1492093031__GV22944327033.jpg"]
 size = ["38", "40", "42", "44", "46", "48", "50", "52"]
@@ -176,7 +176,7 @@ maker = "Vivara"
 type = "Acessório"
 title = "Relógio Akium Feminino"
 desc = "Com o mesmo compromisso que possui com a criação de suas jóias, a Vivara desenvolveu em 2001 a Akium, marca de relógios, com modelos e coleções exclusivas! Transformando sonhos em realidade também no mundo da alta relojoaria, a Akium lança coleções modernas sempre alinhadas as últimas tendências da moda."
-time = "00:05"
+time = "00:04"
 link = "http://www.vivara.com.br/produto/relogio-akium-feminino-aco-rose-rose-3d02fb-02/AK00002759?gclid=CjwKEAjw3drIBRCOwfC-_qqyjQ8SJADvoWQpqznKVLbxmSWCvxwzXYKDcudug5yyBqhwgfYXH0K6FRoCziHw_wcB"
 images = ["http://images.vivara.com.br/Stores/Produtos/AK00002759.jpg", "http://images.vivara.com.br/Stores/Produtos/Embalagem-Relogio-Akium.jpg"]
 #size = [""]
