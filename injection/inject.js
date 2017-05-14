@@ -1,59 +1,9 @@
 $(() => {
+  let selectedProduct;
 
   setTimeout(() => {
-    function loadCss(uri) {
-      const link = document.createElement('link');
-      link.href = uri;
-      link.type = 'text/css';
-      link.rel = 'stylesheet';
-      link.media = 'screen,print';
-
-      document.getElementsByTagName('head')[0].appendChild(link);
-    }
-
-    // Importing visa api
-    $.getScript("https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js");
-
-    function onVisaCheckoutReady() {
-        V.init({
-            apikey: "KF7DD9HRRQWCM468067C21ArqgCE2UNtEiITnX9cJeVyfXOMU",
-            paymentRequest: {
-                currencyCode: "USD",
-                total: "10.00"
-            }
-        });
-        V.on("payment.success", function (payment){ 
-            if(typeof swal !== 'undefined') swal("🤘", "Compra efetuada com sucesso!", "success")
-        });
-        V.on("payment.error", function (payment, error){
-            if(typeof swal !== 'undefined') swal("Ocorreu um erro.", "Por favor, tente novamente mais tarde.", "error");
-        });
-    }
-
-    // Create styles
-    const style = document.createElement('style');
-    style.type = 'text/css';
-
-    const css = `
-    .video-playlist-item {
-      position: relative;
-      border: 1px solid transparent;
-    }
-    .video-playlist-item.active {
-      border: 1px solid rgba(255,255,255,.2);
-    }
-    .playlist-video__duration.product-price {
-      text-transform: uppercase;
-    }
-    `;
-
-    if (style.styleSheet) {
-      style.styleSheet.cssText = css;
-    } else {
-      style.appendChild(document.createTextNode(css));
-    }
-
-    document.getElementsByTagName('head')[0].appendChild(style);
+    // Inject manual
+    // end
 
     const products = [
       {
@@ -103,6 +53,7 @@ $(() => {
       //anchor.setAttribute('href', product.link);
       anchor.setAttribute('title', product.title);
       anchor.setAttribute('data-product-time', product.time);
+      anchor.setAttribute('data-product-id', product.id);
       anchor.className = 'video-playlist-item product-item';
       anchor.innerHTML = `
         <div class="video-playlist-item__video">
@@ -149,7 +100,11 @@ $(() => {
           </div>
         </div>
       </div>
-    `)
+    `);
+
+    $('.product-item').on('click', (e) => {
+      selectedProduct = $(e.currentTarget);
+    });
 
     // Update active
     const interval = setInterval(() => {
@@ -161,6 +116,22 @@ $(() => {
         }
       });
     }, 1000);
+
+    // Visa
+    V.init({
+      apikey: "KF7DD9HRRQWCM468067C21ArqgCE2UNtEiITnX9cJeVyfXOMU",
+      paymentRequest: {
+        currencyCode: "USD",
+        total: "10.00"
+      }
+    });
+    V.on("payment.success", function (payment){ 
+      console.log(payment)
+      if(typeof swal !== 'undefined') swal("Compra efetuada com sucesso!", "🤘", "success")
+    });
+    V.on("payment.error", function (payment, error){
+      if(typeof swal !== 'undefined') swal("Ocorreu um erro.", "Por favor, tente novamente mais tarde.", "error");
+    });
 
   }, 3000)
   
